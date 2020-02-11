@@ -1,3 +1,6 @@
+@media screen and (max-width: 1920px)
+{
+
 body {
 	font-family: 'Oswald', sans-serif;
 	margin: 0;
@@ -147,4 +150,169 @@ footer section {
 		margin-top: 2vh;
 		width: 25vh;
 		align-self: flex-start;
+}
+
+}
+
+/********************************************************************************************************/
+
+/********************************************************************************************************/
+
+
+@media screen and (max-width: 1080px)
+{
+body {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 12vh;
+}
+
+	header nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		background-color: #ffffff;
+		top: 0;
+		width: 100%;
+		-webkit-box-shadow: 2px 15px 18px -6px rgba(0,0,0,0.7);
+		-moz-box-shadow: 2px 15px 18px -6px rgba(0,0,0,0.7);
+		box-shadow: 2px 15px 18px -6px rgba(0,0,0,0.7);
+		height: 15vh;
+		z-index: 3;
+	}
+		header nav img {
+		margin-left: 10vh;
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+		width: 25vh;
+		}
+		header nav ul {
+			list-style: none;
+			margin-right: 10vh;
+		}
+			header nav ul li {
+				margin: 1vh;
+				display: inline;
+				padding: 0;
+
+			}
+				header nav ul li a {
+					text-decoration: none;
+					text-decoration-color: cornflowerblue;
+					padding: 2vh;
+				}
+				header nav ul li a:hover {
+					background-color: #D8D8D8;
+				}
+				header nav ul li a:focus {
+					text-decoration: underline;
+					text-decoration-color: white;
+					background-color: #464646;
+				}
+				header nav ul li a:visited {
+					text-decoration: black;
+				}
+
+.brand-cover {
+	background: url(../Images/background_1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	margin: 0;
+}
+
+	.brand-cover h1 {
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 4vh;
+		margin: 0;
+		color: floralwhite;
+	}
+
+#presentation {
+	display: flex;
+	height: 30vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	#presentation p {
+		color: white;
+		text-transform: uppercase;
+		font-size: 15vh;
+		text-shadow:#ff006e 2.5px 2.5px 0,
+		#8338ec 5px 5px 0,
+		#3a86ff 7.5px 7.5px 0,
+		#333 10px 10px 10px;color:#ffcc00;
+		margin-top: 40vh;
+		text-align: center;
+	}
+
+/*.travaux {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.travaux img {
+	width: 15%;
+}*/
+
+footer {
+	position: absolute;
+	background: #50f658;
+	width: 100%;
+}
+footer section {
+	display: flex;
+	flex-direction: column-reverse;
+	font-size: 0.7em;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+}
+#Contact {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	#Contact nav {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+		#Contact nav ul {
+			list-style: none;
+			display: flex;
+			justify-content: space-around;
+		}
+	#Contact p {
+		align-self: center;
+	}
+#Explication {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#Logo_bas {
+	margin-left: 10vh;
+		margin-top: 2vh;
+		width: 25vh;
+		align-self: flex-start;
+}
+
+
 }
