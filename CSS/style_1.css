@@ -7,6 +7,7 @@ body {
 	padding: 0;
 }
 
+
 header {
 	height: 12vh;
 }
@@ -51,19 +52,21 @@ header {
 				}
 				header nav ul li a:focus {
 					text-decoration: underline;
-					text-decoration-color: white;
+					text-decoration-color: #D8D8D8;
 					background-color: #464646;
 				}
-				header nav ul li a:visited {
-					text-decoration: black;
+				a:visited {
+				color: cornflowerblue;
 				}
+
 
 .brand-cover {
 	background: url(../Images/background_1.jpg);
 	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0; 
 	background-size: cover;
 	height: 100vh;
-	margin: 0;
 }
 
 	.brand-cover h1 {
@@ -75,6 +78,33 @@ header {
 		margin: 0;
 		color: floralwhite;
 	}
+
+#font {
+	background-size: cover;
+	height: 100vh;
+	margin: 0;
+}
+
+#font_contact {
+	background: url(../Images/contact_font.jpg);
+	background-repeat: no-repeat;
+	/*background-size: cover;*/
+	width: 90vw;
+	align-self: center;
+	height: 100vh;
+	margin: 0;
+}
+
+#Contact_font {
+	display: flex;
+}
+
+#form {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	align-items: center;
+}
 
 #presentation {
 	display: flex;
@@ -95,31 +125,26 @@ header {
 		text-align: center;
 	}
 
-/*.travaux {
+.travaux {
 	display: flex;
-	flex-direction: row;
+	flex-flow: row wrap;
 	align-items: center;
 	margin: 0;
 	padding: 0;
 }
 
-.travaux img {
-	width: 15%;
-}*/
-
 footer {
 	position: absolute;
-	background: #50f658;
-	width: 100%;
-}
-footer section {
-	font-size: 1em;
+	width: 90vw;
 	display: flex;
-	flex-direction: row-reverse;
+}
+footer article {
+	font-size: 1em;
+	
 	justify-content: space-between;
 	text-align: justify;
 }
-#Contact {
+/*#Contact {
 	width: 50%;
 	display: flex;
 	align-items: center;
@@ -134,6 +159,22 @@ footer section {
 			list-style: none;
 			display: flex;
 			justify-content: space-around;
+		}
+		#Contact nav ul li a {
+			color: cornflowerblue;
+			text-decoration: none;
+			padding: 2vh;
+		}
+		#Contact nav ul li a:visited {
+			color: cornflowerblue;
+		}
+		#Contact nav ul li a:hover {
+			background-color: #D8D8D8;
+		}
+		#Contact nav ul li a:focus {
+			text-decoration: underline;
+			text-decoration-color: white;
+			background-color: #464646;
 		}
 	#Contact p {
 		align-self: center;
@@ -150,7 +191,7 @@ footer section {
 		margin-top: 2vh;
 		width: 25vh;
 		align-self: flex-start;
-}
+}*/
 
 }
 
@@ -269,7 +310,6 @@ header {
 
 footer {
 	position: absolute;
-	background: #50f658;
 	width: 100%;
 }
 footer section {
