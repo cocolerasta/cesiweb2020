@@ -87,6 +87,7 @@ header {
 	margin: 0; 
 	background-size: cover;
 	height: 100vh;
+	box-shadow: 2px 15px 18px -6px rgba(0,0,0,0.7);
 }
 
 	.brand-cover h1 {
@@ -98,33 +99,6 @@ header {
 		margin: 0;
 		color: floralwhite;
 	}
-
-#font {
-	background-size: cover;
-	height: 100vh;
-	margin: 0;
-}
-
-#font_contact {
-	background: url(../Images/contact_font.jpg);
-	background-repeat: no-repeat;
-	/*background-size: cover;*/
-	width: 90vw;
-	align-self: center;
-	height: 100vh;
-	margin: 0;
-}
-
-#Contact_font {
-	display: flex;
-}
-
-#form {
-	display: flex;
-	justify-content: center;
-	width: 50%;
-	align-items: center;
-}
 
 #presentation {
 	display: flex;
@@ -154,9 +128,10 @@ header {
 .grid {
 	display: grid;
 	grid-template-columns: auto auto;
- 	grid-gap: 10vh;
-  	padding: 10vh 30vh 10vh 30vh;
-	background-color: rgba(255, 255, 0, 0.8);
+ 	grid-gap: 10vw;
+ 	grid-row-gap: 5vh;
+  	padding: 10vh 25vh 10vh 25vh;
+	background-color: rgba(240, 230, 140, 0.8);*/
 }
 
 .travaux1 {
@@ -171,6 +146,8 @@ header {
 
 .travaux1 figcaption {
 	font-family: 'cherrylight', sans-serif;
+	margin: 0;
+	padding: 2vh;
 }
 
 .travaux2 {
@@ -184,6 +161,8 @@ header {
 
 .travaux2 figcaption {
 	font-family: 'cherrylight', sans-serif;
+	margin: 0;
+	padding: 2vh;
 }
 
 .travaux3 {
@@ -197,6 +176,8 @@ header {
 
 .travaux3 figcaption {
 	font-family: 'cherrylight', sans-serif;
+	margin: 0;
+	padding: 2vh;
 }
 
 .travaux4 {
@@ -210,23 +191,60 @@ header {
 
 .travaux4 figcaption {
 	font-family: 'cherrylight', sans-serif;
+	margin: 0;
+	padding: 2vh;
 }
 
 footer {
-	position: absolute;
-	width: 90vw;
 	display: flex;
-}
-footer article {
-	font-size: 1em;
-	justify-content: space-between;
-	text-align: justify;
+	justify-content: center;
 }
 
+footer article {
+	font-size: 1em;
+	text-align: justify;
+	font-family: 'cherrylifht', sans-serif;
+}
+
+.bas_page {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 1vw;
+	width: 60vw;
+	padding: 10vh 15vh 10vh 15vh;
+}
+
+.bas_page a {
+		text-decoration: none;
+		color: #00A344;
+	}
+
+.rounded-circle {
+	border-radius: 50%;
+}
+	.img-fluid {
+		width: 4vw;
+	}
+
+.telephone {
+	direction: flex;
+	flex-direction: column;
+}
+
+.telephone ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+	
+.telephone ul li {
+	padding: 1vh;
+}
+	
 .telephone ul li a {
 	text-decoration: none;
 	color: #00A344;
-	padding: 2vh;
 }
 	.telephone ul li a:hover {
 		background-color: #D8D8D8;
@@ -244,46 +262,64 @@ footer article {
 	color: #00A344;
 	}
 
-/*#Contact {
-	width: 50%;
+/****************************************Page entreprise*************************************************/
+
+#entreprise_flex {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+
 }
-	#Contact nav {
-		display: flex;
-		flex-direction: column;
-		width: 100%;
-	}
-		#Contact nav ul {
-			list-style: none;
-			display: flex;
-			justify-content: space-around;
-		}
-		#Contact nav ul li a {
-			color: cornflowerblue;
-			text-decoration: none;
-			padding: 2vh;
-		}
-		#Contact nav ul li a:visited {
-			color: cornflowerblue;
-		}
-		#Contact nav ul li a:hover {
-			background-color: #D8D8D8;
-		}
-		#Contact nav ul li a:focus {
-			text-decoration: underline;
-			text-decoration-color: white;
-			background-color: #464646;
-		}
-	#Contact p {
-		align-self: center;
-	}
-#Explication {
-	width: 50%;
+
+#entreprise_grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 2vw;
+	grid-row: 2vh;
+	width: 60vw;
+
+}
+
+/****************************************Page contact****************************************************/
+
+#Contact_section {
 	display: flex;
+}
+
+#Image_contact {
+	background: url(../Images/contact_font.jpg);
+	background-repeat: no-repeat;
+	width: 50vw;
+	align-self: center;
+	height: 100vh;
+	margin: 0;
+}
+
+
+#form {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	width: 50vw;
+	font-family: 'cherrylight', sans-serif;
+}
+
+.email {
+	background-color:#FFF353;
+	padding:3px;
+  	border:1px solid #F5C5C5;
+  	border-radius:5px;
+  	width:30vw;
+	height: 5vh;
+  	box-shadow:1px 1px 2px #C0C0C0 inset;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+#contact_grid {
+	justify-content: center;
+	align-items: center;
 }
 
 #Logo_bas {
@@ -291,7 +327,11 @@ footer article {
 		margin-top: 2vh;
 		width: 25vh;
 		align-self: flex-start;
-}*/
+}
+
+/***************************************Page produit*****************************************************/
+
+
 
 }
 
