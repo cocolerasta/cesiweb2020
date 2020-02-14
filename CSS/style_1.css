@@ -305,8 +305,16 @@ footer article {
 	font-family: 'cherrylight', sans-serif;
 }
 
+#form p {
+	font-size: 6vh;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 2vh;
+}
+
 .email {
-	background-color:#FFF353;
+	background-color:#D0FCD8;
 	padding:3px;
   	border:1px solid #F5C5C5;
   	border-radius:5px;
@@ -314,12 +322,23 @@ footer article {
 	height: 5vh;
   	box-shadow:1px 1px 2px #C0C0C0 inset;
 	font-family: 'Oswald', sans-serif;
+	font-size: 3vh;
+	text-transform: lowercase;
 }
 
+.fichier {
+	
+}
 
-#contact_grid {
-	justify-content: center;
-	align-items: center;
+.bouton {
+	width: 10vw;
+	color: #00A344;
+	background-color: #D0FCD8;
+	height: 5vh;
+	font-size: 3vh;
+	font-style: 'Oswald', sans-serif;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px black;
 }
 
 #Logo_bas {
